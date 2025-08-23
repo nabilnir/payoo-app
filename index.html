@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="font-['Inter'] bg-[#F4F5F7] min-h-screen flex flex-col justify-center items-center p-4 ">
+<body class="font-['Outfit'] bg-[#F4F5F7] min-h-screen flex flex-col justify-center items-center p-4 ">
     <div class="h-[130px] w-[320px] bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center mb-8">
         <img src="./assets/Group.png" alt="Payoo Logo">
     </div>
@@ -30,12 +32,12 @@
                                 fill="currentColor"></path>
                         </g>
                     </svg>
-                    <input type="tel" id="phn-num" class="tabular-nums bg-transparent w-full focus:outline-none" 
-                        required placeholder="Enter your Phone number" pattern="[0-9]*" minlength="13" maxlength="13" 
+                    <input type="tel" id="phn-num" class="tabular-nums bg-transparent w-full focus:outline-none"
+                        required placeholder="Enter your Phone number" pattern="[0-9]*" minlength="13" maxlength="13"
                         title="Must be 13 digits" />
                 </label>
                 <p class="validator-hint text-sm text-red-500 hidden mt-1">Must be 13 digits</p>
-                
+
                 <label for="pin-num" class="mt-4 font-semibold block">4-Digit Pin</label>
                 <label class="input validator bg-[#F4F5F7] mt-2 rounded-3xl flex items-center w-full">
                     <svg class="h-[1em] opacity-50 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -47,15 +49,15 @@
                             <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
                         </g>
                     </svg>
-                    <input type="password" id="pin-num" class="bg-transparent w-full focus:outline-none" 
-                        required placeholder="Enter 4 digit pin" minlength="4" maxlength="4" 
-                        title="Must be 4 digit number" />
+                    <input type="password" id="pin-num" class="bg-transparent w-full focus:outline-none" required
+                        placeholder="Enter 4 digit pin" minlength="4" maxlength="4" title="Must be 4 digit number" />
                 </label>
                 <p class="validator-hint text-sm text-red-500 hidden mt-1">
                     Must be 4 digit number
                 </p>
 
-                <button class="btn mt-6 w-full rounded-3xl bg-blue-500 text-white py-3 font-semibold hover:bg-blue-600 transition"
+                <button
+                    class="btn mt-6 w-full rounded-3xl bg-blue-500 text-white py-3 font-semibold hover:bg-blue-600 transition"
                     id="login-btn">Login</button>
             </div>
         </form>
